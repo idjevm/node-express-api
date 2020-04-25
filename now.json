@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "/dev.js", "use": "@now/node" }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/dev.js",
+      "methods": ["GET"]
+    },
+    { "src": "/books", "dest": "/dev.js", "methods": ["GET","PUT", "DELETE", "UPDATE"]}, 
+    { "src": "/books/(.*)", "dest": "/dev.js", "methods": ["GET","PUT", "DELETE", "UPDATE"]}
+  ],
+  "env": {
+    "MONGO_ADDRESS": "@mongo-address" 
+  }
+}
