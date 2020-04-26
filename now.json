@@ -13,6 +13,6 @@
     { "src": "/books/(.*)", "dest": "/app.js", "methods": ["GET","POST", "DELETE", "PUT"]}
   ],
   "env": {
-    "MONGO_ADDRESS": "@mongo-address" 
+    "MONGO_DB_URI": "@mongo_db_uri" 
   }
 }
