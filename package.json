@@ -1,25 +1,37 @@
 {
-  "name": "now-express",
+  "name": "node-express-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "dev.js",
+  "description": "This is a simple web server built in nodejs and expressjs",
+  "main": "app.js",
   "scripts": {
-    "start": "node dev.js",
-    "dev": "nodemon dev.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
-  "keywords": [],
+  "keywords": [
+    "mern",
+    "nodejs",
+    "expressjs",
+    "webdev"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idjevm/node-express-api.git"
+  },
   "author": "Josue Villanueva",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idjevm/node-express-api/issues"
+  },
+  "homepage": "https://github.com/idjevm/node-express-api#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "nodemon": "^1.19.1",
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "config": "^3.3.1",
     "cors": "^2.8.5",
-    "mongoose": "^5.9.10",
-    "path": "^0.12.7",
-    "validation": "0.0.1"
+    "mongoose": "^5.9.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
